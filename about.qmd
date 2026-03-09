@@ -29,4 +29,4 @@ R, Quarto, Git, Python
 
 You can download my CV here:
 
-[Download my CV](emu430-spring2026-EnesBuyukertas/M.EnesBüyükertaşCV-eng.pdf )
+[Download my CV](https://github.com/emu-hacettepe-analytics/emu430-spring2026-EnesBuyukertas/blob/main/M.EnesB%C3%BCy%C3%BCkerta%C5%9FCV-eng.pdf)
