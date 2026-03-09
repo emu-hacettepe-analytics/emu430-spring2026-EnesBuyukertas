@@ -5,21 +5,13 @@ sidebar: false
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
-
-# Work Experience
-
-## Employements
-
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2022 - ongoing.
 
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
+1.  Firm DroneTech Savunma Sanayi A.Ş., position intern, year 2025
 
-2.  Firm bbb, position yyy, year yyy
+2.  Firm TAI, position Candidate Engineer, year 2025-2026
 
 # Projects
 
@@ -28,3 +20,7 @@ sidebar: false
 R, Quarto, Git, Python
 
 # Hobbies
+1.Football
+2.Video Games (counter strike, ea fc etc.)
+3.Tv Shows and Movies
+4.Aviation Simulations
