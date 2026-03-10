@@ -3,13 +3,7 @@ title: "Assignment 1"
 ---
 
 # Assignment 1
-
-```{r}
-1 + 1
-```
-
-My first assignment has two parts.
-
+# Question 3
 ## (a)
 Video: Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Baykal Hafızoğlu & Erdi Daşdemir
 Summary
@@ -28,3 +22,64 @@ C)	Predictive Analytics → Predicting future demand or the state of a system us
 D)	Prescriptive Analytics → Building mathematical optimization models and solving problems by defining decision variables, parameters, and constraints.
 E)	Diagnostic Analytics → Developing business rules (decision rules) that answer the question "under what constraints and what action should we take?", much like a doctor prescribing medication to diagnose a patient.
 Answer:E
+
+# Question 4
+```{r}
+library(dslabs)
+# The dataset
+data("polls_us_election_2016")
+
+# Personal Info
+my_first <- "Muhammed Enes"
+my_birth_year <- 2003
+
+# Defining k
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+k
+
+# k rows from the data
+if (k %% 2 == 0) {
+  head(polls_us_election_2016, k)
+} else {
+  tail(polls_us_election_2016)
+}
+
+# Total number of NA values
+total_na_original <- sum(is.na(polls_us_election_2016))
+total_na_original
+
+# Number of NA values sorted largest to smallest
+na_per_column <- sort(colSums(is.na(polls_us_election_2016)), decreasing = TRUE)
+head(na_per_column, 8)
+
+# New object without overwriting
+new_data <- polls_us_election_2016
+
+# Replacing NA values
+for (col in names(new_data)) {
+  if (is.numeric(new_data[[col]])) {
+    new_data[[col]][is.na(new_data[[col]])] <- my_birth_year + k
+  } else if (is.character(new_data[[col]]) || is.factor(new_data[[col]])) {
+    if (is.factor(new_data[[col]])) {
+      new_data[[col]] <- as.character(new_data[[col]])
+    }
+    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
+  }
+}
+
+# Display k rows of new data frame
+if ( k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+
+# Total number of NA values remaining in the new data frame
+total_na_new <- sum(is.na(new_data))
+total_na_new
+
+# Check whether there are still any NA values
+anyNA(new_data)
+```
+
+My first assignment has two parts.
