@@ -11,5 +11,20 @@ title: "Assignment 1"
 My first assignment has two parts.
 
 ## (a)
+Video: Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Baykal Hafızoğlu & Erdi Daşdemir
+Summary
+In his presentation, he examines the world of analytics under four main headings: Descriptive, Diagnostic, Predictive, and Prescriptive analytics. He explains that courses like data visualization, hypothesis testing, time series, and operations research, which we took in our undergraduate education, actually cover these four analytical pillars. For example, we understand that even the most perfect mathematical optimization (prescriptive) model will be useless without a good machine learning (predictive) model for demand forecasting; these methods are interconnected. Additionally, while the excellent optimization algorithms we write constitute only 1% of the work, the remaining 99% consists of data cleaning, error management, database integration, and most importantly, designing a clean user interface (UI) that the end user can use. We must start the project by defining measurable key performance indicators (KPIs) and prove the project's value by comparing it to the "Business As Usual". Instead of giving users a massive product months later, they argue that getting continuous feedback from them through early prototypes is critical for project adoption.
+
+
 
 ## (b)
+Questions:
+1)	What are the most critical steps to consider for a project to be successful and adopted by users?
+
+2)	The application methods match the fields Descriptive, Diagnostic, Predictive, and Prescriptive. Accordingly, which of the following matches is incorrect?
+A)	Descriptive Analytics → Creating bar charts or box plots by visualizing the dataset and understanding the underlying data.
+B)	Diagnostic Analytics → Diagnosing the cause of problems in a system by using statistical hypothesis tests or looking for outliers in regression analyses.
+C)	Predictive Analytics → Predicting future demand or the state of a system using machine learning algorithms and simulation methods.
+D)	Prescriptive Analytics → Building mathematical optimization models and solving problems by defining decision variables, parameters, and constraints.
+E)	Diagnostic Analytics → Developing business rules (decision rules) that answer the question "under what constraints and what action should we take?", much like a doctor prescribing medication to diagnose a patient.
+Answer:E
